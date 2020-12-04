@@ -15,7 +15,7 @@ const submitBtn = document.querySelector('#submit');
 let userName = document.querySelector('#userName');
 let userQuestion = document.querySelector('#userQuestion');
 
-const db = firestore.collection("quesData");
+const db = firestore.collection("quesData").orderBy("", "asc");
 
 submitBtn.addEventListener('click', function(){
   let userNameInput = userName.value;
