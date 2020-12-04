@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Ask Maddy
+</title>
+
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body bgcolor="black">
+    <div style="background-color: black;" class="container mt-3 card card-body p-4" >
+        <h4 class="text-center" style="color: rgb(248, 8, 8);font-family: 'Courier New', Courier, monospace;font-size: 30px;"><b>Ask Maddy</b></h4>
+        <div class="form-group">
+            <label for="Name" style="color: white;">Name</label>
+            <input type="text" name="Name" id="userName" class="form-control">
+        </div>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color:whitesmoke;font-size: 13px;">You
+            may not enter your name if you want to stay anonymous</p>
+        <div class="form-group">
+            <label for="Question" style="color: white;">Question</label>
+            <textarea name="Question" id="userQuestion" class="form-control"></textarea>
+        </div>
+        <button id="submit" class="btn btn-danger">Submit</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="index.js"></script>
+
+    
+
+</body>
+
+</html>
